@@ -25,6 +25,9 @@
 .bg-light {
     background-color: rgba(255, 144, 14, 0.1);
 }
+.orange{
+    color: rgba(255, 144, 14, 1);
+}
 
 
 /* Header style */
@@ -76,8 +79,18 @@
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
+.feature-description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1.3rem;
+    margin-bottom: 2rem;
+}
 .banner-img {
     width: 100%; 
+}
+main {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .btn-primary {
     background-color: #FF900E;
@@ -92,16 +105,114 @@
 .btn-primary:hover {
     background-color: #e07b0c;
 }
+.teams {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+.teams-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.teams-features {
+    max-width: 537px;
+    margin-left: 73px;
+}
+.features{
+    gap: 146px;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+.feature-heading {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+#feature-title {
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 21px;
+}
+.feature-card {
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.feature-card .feature-card-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#experience-badge{
+    padding: 46px 42px;
+    margin-left: -92px;
+    margin-top: -87px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 70px;
+}
+#experience-text{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+/* fact content */
+
+
+
+
+
+
+
+
+
+
 
 /* responsive design */
 @media screen and (max-width: 768px) {
-    .navbar, .navlist {
+    .navbar, .navlist, .teams ,.features{
         flex-direction: column;
     }
-    .banner-title {
-        font-size: 2.5rem;
+        .teams-imgs {
+        grid-template-columns: repeat(1, 1fr);
+        }
+.teams-features {
+    margin-left: 0;
+    text-align: center;
+    
+}
+#experience-badge {
+    padding: 20px 24px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+}
+
+
+
+/* medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams-imgs {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .banner-description {
-        font-size: 0.9rem;
+    .teams,.features {
+        flex-direction: column;
     }
+    .teams-features {
+        margin-left: 0;
+        text-align: center;
+    }
+        #experience-badge {
+            padding: 20px 24px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
 }
