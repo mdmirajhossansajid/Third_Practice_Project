@@ -306,5 +306,9 @@ main,
     .facts-container,
     .sponsor-logos {
         grid-template-columns: 1fr;
+
+    }
+    .arc-img {
+        width: 100%;
     }
 }
